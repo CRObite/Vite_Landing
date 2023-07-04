@@ -379,7 +379,6 @@ body{
 }
 .panel-btn{
     align-self: center;
-    margin-top: 5%;
 }
 .yellow{
     background-color: #FFB400;
@@ -416,11 +415,11 @@ body{
 
 .select-menu .select-btn{
     display: flex;
-    height: 50px;
+    height: 40px;
     background:  #E4E4E4;
     padding: 1% 5%;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     border-radius: 8px;
     align-items: center;
     cursor: pointer;
@@ -429,7 +428,7 @@ body{
 }
 .select-menu .options{ 
     position: absolute;
-    padding: 5px;
+    padding: 2%;
     width: 565px;
     margin-top: 10px;
     border-radius: 8px;
@@ -515,8 +514,8 @@ body{
 .analysis__quota{
     display: flex;
     align-items: center;
-    margin-top: 2%;
-    margin-bottom: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .analysis__checkbox-text{
@@ -1812,6 +1811,9 @@ footer {
     .registration__overlay {
         width: 80px;
         height: 80px;
+    }
+    .panel-input{
+      height: 25px;
     }
     .registration__img {
         width: 80px;

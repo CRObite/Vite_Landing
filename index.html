@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="font">
     <!-- маски на input tel -->
     <script src="https://cdn.jsdelivr.net/npm/inputmask/dist/inputmask.min.js"></script>
     <!-- axios -->
@@ -22,6 +24,7 @@
     <!-- seo -->
     <meta name="description" content="BilimLab-онлайн обучение и подготовка к ЕНТ(BilimLab-онлайн оқыту және ҰБТ-ға дайындық)">
     <meta name="keywords" content="BilimLab, ЕНТ, ҰБТ, онлайн, дайындық, 140, курстар, тарих, оқу сауаттылығы, математикалық сауаттылық"> 
+    <meta name="theme-color" content="#566DF6"/>
 </head>
 <body>
     
@@ -284,7 +287,7 @@
                 <p class="error_message2">Екі пәнді де таңдаңыз</p>
 
                 <div class="analysis__quota">
-                  <input class="analysis__checkbox" type="checkbox" id="checkbox"/>
+                  <input class="analysis__checkbox" type="checkbox" id="checkbox" aria-label="checkbox"/>
                   <p class="analysis__checkbox-text">Ауыл квотасы</p>
                 </div>
                 <div class="analysis__scores">
@@ -292,7 +295,7 @@
                   <p class="analysis__score">80</p>
                 </div>
                 <div class="analysis__ranges">
-                  <input type="range" min="50" max="140" value="80" class="analysis__ranges" id="myRange">
+                  <input type="range" min="50" max="140" value="80" class="analysis__ranges" id="myRange" aria-label="Range">
                   <button class="analysis__btn btn" id="openModalBtn">Анализ</button>
                 </div>
                 
@@ -315,13 +318,13 @@
                     <div class="infoblock__shape darkerblue smoothed"></div>
                 </div>
                 <div class="infoblock__textfild">
-                    <h3 class="infoblock__label">Сабақтар тікелей эфирде өтеді</h3>
+                    <h2 class="infoblock__label">Сабақтар тікелей эфирде өтеді</h2>
                     <p class="infoblock__text green">Сабақтар біздің арнайы платформада тікелей эфирде өтетін болады. Онлайн сабақтар кезінде мұғалім мен оқушылар бір-бірімен тікелей сөйлесіп, материалдарды талқылап, бір-біріне сұрақтар қоя алады.Мұғалім оқушыларға материалды түсіндіру үшін тақтаны пайдаланады немесе презентациялар көрсете алады. </p>
                 </div>
             </div>
             <div class="infoblock__contentfield">
                 <div class="infoblock__textfild reverse">
-                    <h3 class="infoblock__label">Тапсырмалар мен үй жұмыстарын жеке тексереміз</h3>
+                    <h2 class="infoblock__label">Тапсырмалар мен үй жұмыстарын жеке тексереміз</h2>
                     <p class="infoblock__text  green">Тапсырмалар мен үй тапсырмасын мұғалім немесе оқу платформасы да тексере алады. Бұл әдетте тапсырма түріне байланысты.</p>
                 </div>
                 <div class="infoblock__shapes">
@@ -336,7 +339,7 @@
                     <div class="infoblock__shape red smoothed"></div>
                 </div>
                 <div class="infoblock__textfild">
-                    <h3 class="infoblock__label">Куратор сізге екі сағат ішінде жауап береді</h3>
+                    <h2 class="infoblock__label">Куратор сізге екі сағат ішінде жауап береді</h2>
                     <p class="infoblock__text green">Әдетте кураторлар сізге мүмкіндігінше жылдам жауап беруге тырысады, сондықтан сіз бірнеше сағат ішінде жауап күте аласыз. Сұрауыңыз шұғыл болса, жылдамырақ жауап алу үшін техникалық қолдау қызметіне тікелей хабарласуыңызға болады.</p>
                 </div>
             </div>
@@ -423,7 +426,7 @@
             </div>
             
             <div class="reregistration__info">
-                <h3  class="reregistration__info-header">Сұрақтарың қалды ма?</h3>
+                <h2  class="reregistration__info-header">Сұрақтарың қалды ма?</h2>
                 <ul class="reregistration__list">
                     <li class="reregistration__list-item">
                         <div class="dotes is-dotted"></div>
