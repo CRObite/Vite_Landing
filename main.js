@@ -1,12 +1,17 @@
 var modal = document.getElementById('modal');
 var modal2 = document.getElementById('modal2');
 var modal3 = document.getElementById('modal3');
+var modal4 = document.getElementById('modal4');
 var openModalBtn = document.getElementById('openModalBtn');
 var openModalBtn2 = document.getElementById('openModalBtn2');
+var openModalBtn3 = document.querySelectorAll('.checker__card-more')[0];
+var openModalBtn4 = document.querySelectorAll('.checker__card-more')[1];
+var openModalBtn5 = document.querySelectorAll('.checker__card-more')[2];
 var againBtn = document.getElementById('again');
 var closeBtn = document.getElementsByClassName('close')[0];
 var closeBtn1 = document.getElementsByClassName('close')[1];
 var closeBtn2 = document.getElementsByClassName('close')[2];
+var closeBtn3 = document.getElementsByClassName('close')[3];
 var checkboxQuota = document.getElementById('checkbox');
 var professionItems = document.querySelectorAll(".profession");
 const posterItems = document.querySelectorAll(".poster");
@@ -614,6 +619,36 @@ openModalBtn2.addEventListener("click", () => {
   
 });
 
+const title = document.querySelector(".modal-text-main");
+const text = document.querySelector(".modal_text");
+const inner = document.getElementById("inner_img");
+
+openModalBtn3.addEventListener("click", () => {
+
+  title.innerHTML = "Білікті мұғалімдер";
+  text.innerHTML = "<p>Біздің оқытушылар өз пәнін өте жақсы меңгерген, ұстаздық тәжірибесі мол жоғары білікті және тәжірибелі мамандар. Біз студенттерге жоғары сапалы білім беру үшін мұғалімдерді мұқият таңдаймыз.Біздің оқытушылар өз саласының мамандары ғана емес, сонымен қатар қарым-қатынасқа ашық және студенттерге кез келген уақытта көмектесуге дайын. Олар материалды барынша тиімді қабылдауды қамтамасыз ету үшін әртүрлі әдістерді қолдана отырып, оқытудың интерактивті тәсілін қолдайды.Сонымен қатар, біздің оқытушылар әр студентке жеке қолдау мен қажетті көмекті алуын үнемі қадағалап отырады. Олар оқу үшін қолайлы жағдай жасауға тырысады және студенттерге өз біліміне сенімдірек сезінуге көмектеседі.Біздің оқытушылар ұжымы таңдаған салаңыз бойынша біліміңізді жетілдіруге көмектесіп қана қоймай, табысқа жету жолында сізге тәлімгер және тәлімгер болады. Мұғалімдеріміздің тәжірибесі мен білімінің арқасында сіз біздің онлайн мектебімізден барынша пайда алып, өз мақсаттарыңызға жете аласыз.</p>";
+  inner.src = "img/icon1.svg";
+  modal4.style.display = 'block';
+  
+});
+
+openModalBtn4.addEventListener("click", () => {
+  
+  title.innerHTML = "Толық дайындық";
+  text.innerHTML = "<p>Біз емтиханға толық, барлық пән бойынша дайындықты ұсынамыз.Сонымен қатар емтиханға дайындық материалдарын, соның ішінде тестілерді, тәжірибелік тапсырмаларды және оқушыларға білімдерін тексеруге және емтиханға дайындалуға көмектесетін басқа материалдарды ұсынамызСонымен қатар, ұстаздарымыз оқушылардың алған білімдерін есте сақтауға және өмірде қолдануға көмектесетін оқытудың түрлі әдістерін пайдаланады. Олар студенттерге теорияны білуге ​​ғана емес, алған білімдерін іс жүзінде қалай қолдану керектігін түсінуге көмектеседі.Сондай-ақ біз студенттерге қосымша көмек пен сұрақтарына жауап алу үшін емтиханға дайындық мәселелері бойынша жеке қолдау мен кеңес береміз. Біз студенттеріміздің емтиханға толық дайындалып, толық дайындығымыздың арқасында жоғары нәтижелерге қол жеткізе алатынына кепілдік береміз.</p>";
+  inner.src = "img/icon2.svg";
+  modal4.style.display = 'block';
+});
+
+openModalBtn5.addEventListener("click", () => {
+  title.innerHTML = "Арнайы платформа";
+  text.innerHTML = "<p>Біздің онлайн мектебімізде біз оқушылар мен мұғалімдердің қажеттіліктерін ескере отырып жасалған арнайы платформаны қолданамыз. Бұл платформа біздің курстарға, материалдар мен тапсырмаларға ыңғайлы және оңай қол жеткізуді қамтамасыз етеді. Оның көмегімен студенттер оқу материалдарын жылдам және ыңғайлы қарап, мұғалімдермен байланысып, кері байланыс ала алады. Сондай-ақ платформада оқытуды жақсарту үшін бейне оқулықтар, интерактивті тапсырмалар, басқа студенттермен байланысуға арналған форумдар және т.б. сияқты әртүрлі мүмкіндіктер бар. Бұл мүмкіндіктер студенттерге уақытын тиімді пайдалануға және білімдерін жетілдіруге көмектеседі. Платформа сонымен қатар біздің студенттер үшін қауіпсіздік пен құпиялылықтың жоғары деңгейін қамтамасыз етеді. Барлық деректер қауіпсіз серверлерде сақталады және тек авторизацияланған пайдаланушылар студенттер мен олардың үлгерімі туралы ақпаратқа қол жеткізе алады. Біздің арнайы платформа онлайн мектебімізде оқуды барынша ыңғайлы, тиімді және қауіпсіз ететініне сенімдіміз.</p>";
+  
+  inner.src = "img/icon3.svg";
+  modal4.style.display = 'block';
+});
+
+
 closeBtn.onclick = function() {
   modal.style.display = 'none';
 
@@ -628,6 +663,9 @@ closeBtn1.onclick = function() {
 closeBtn2.onclick = function() {
   modal3.style.display = 'none';
 }
+closeBtn3.onclick = function() {
+  modal4.style.display = 'none';
+} 
 
 
 window.onclick = function(event) {
@@ -637,6 +675,8 @@ window.onclick = function(event) {
     modal2.style.display = 'none';
   } else if(event.target == modal3){
     modal3.style.display = 'none';
+  }else if(event.target == modal4){
+    modal4.style.display = 'none';
   }
 }
 
@@ -695,28 +735,31 @@ const carousel = document.querySelector(".slider__carousel");
 
 let isDragStart = false, prevPageX, prevScrollLeft;
 
-const dragStart = (e) =>{
+const dragStart = (e) => {
   isDragStart = true;
-  prevPageX = e.pageX;
+  prevPageX = e.type === "touchstart" ? e.touches[0].pageX : e.pageX;
   prevScrollLeft = carousel.scrollLeft;
 }
 
-const dragging = (e)=>{
-  if(!isDragStart) return;
-  e.preventDefoult;
-  let positionDiff = e.pageX - prevPageX;
+const dragging = (e) => {
+  if (!isDragStart) return;
+  e.preventDefault();
+  let positionDiff = (e.type === "touchmove" ? e.touches[0].pageX : e.pageX) - prevPageX;
   carousel.scrollLeft = prevScrollLeft - positionDiff;
 }
 
-const dragStop = () =>{
+const dragStop = () => {
   isDragStart = false;
 }
 
 carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("touchstart", dragStart);
 
 carousel.addEventListener("mousemove", dragging);
+carousel.addEventListener("touchmove", dragging);
 
 carousel.addEventListener("mouseup", dragStop);
+carousel.addEventListener("touchend", dragStop);
 
 var phoneInputs = document.getElementsByClassName('telephone');
 
@@ -855,5 +898,7 @@ function hideNotification2() {
 closeIcon.addEventListener('click', hideNotification);
 closeIcon2.addEventListener('click', hideNotification);
 
-
+function navigateToDiv(divId) {
+ console.log(divId);
+}
 

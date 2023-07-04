@@ -1,12 +1,11 @@
 
-
-
 *{
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     line-height: 2rem;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -355,7 +354,7 @@ body{
 
 .panel-input{
     margin: 2% 10%;
-    padding: 2%;
+    padding: 2% 5%;
     border-radius: 5px;
     border: none;
 }
@@ -429,7 +428,7 @@ body{
 .select-menu .options{ 
     position: absolute;
     padding: 2%;
-    width: 565px;
+    width: 478px;
     margin-top: 10px;
     border-radius: 8px;
     background-color:  #E4E4E4;
@@ -466,7 +465,8 @@ body{
 }
 
 .option.disabled{
-    background-color: #b0b0b0;
+    opacity: 0.6;
+    color: #ffffff;
     cursor: not-allowed;
 }
 
@@ -492,7 +492,7 @@ body{
 
 .analysis__title{
     font-size: 2rem;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 .analysis__scores-text{
     font-size: 1.2rem;
@@ -971,7 +971,6 @@ footer {
 .modal__accordion-item {
     border-bottom: 1px solid #ccc;
     position: relative;
-
 }
   
 .modal__accordion .modal__accordion-item:last-child {
@@ -981,17 +980,20 @@ footer {
 .modal__accordion-header {
     border-bottom: #646464;
     display: flex;
+    height: 80%;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     cursor: pointer;
+    margin: auto 0;
 }
 .poster{
     font-size: 1.2rem;
 }
 
 .modal__accordion-header img{
-    height: 8px;
+    height: 12px;
+    width: 12px;
 }
 .modal__cup{
     margin-left: 3%;
@@ -1048,7 +1050,7 @@ footer {
 }
 
 .modal__result-item{
-    border-bottom: 1px solid #E1DDDD;
+    
     margin-bottom: 2%;
     display: flex;
     align-items: center;
@@ -1060,6 +1062,7 @@ footer {
     width: 15%;
 }
 .modal__result-info{
+    border-bottom: 1px solid #E1DDDD;
     width: 100%;
 }
 .modal__result-info p:first-child{
@@ -1143,6 +1146,31 @@ footer {
     right: 4%;
     cursor: pointer;
 }
+.modal-text-main{
+    font-size: 1.6rem;
+}
+
+
+
+.modal_text{
+    margin: 2%;
+    font-size: 1.2rem;
+}
+
+.checker__card-image.inner{
+    padding: 1% 1% 0 1%;
+}
+
+.modal__content.lager{
+    height: 700px;
+}
+.modal__text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+}
 
 /* 1025px — 1200px */
 
@@ -1173,7 +1201,7 @@ footer {
 
 
     .select-menu .options{ 
-        width: 400px;
+        width: 345px;
     }
 
     .options .option{
@@ -1289,6 +1317,16 @@ footer {
     .bx-x{
         font-size: 1.8rem;
     }
+
+    .modal-text-main{
+        font-size: 1.4rem;
+    }
+    .modal_text{
+        font-size: 1rem;
+    }
+    .modal__content.lager{
+        height: 620px;
+    }
 }
 
 
@@ -1316,7 +1354,7 @@ footer {
 
     
     .select-menu .options{ 
-        width: 265px;
+        width: 237px;
     }
 
     .options .option{
@@ -1435,6 +1473,16 @@ footer {
     .bx-x{
         font-size: 1.6rem;
     }
+
+    .modal-text-main{
+        font-size: 1.4rem;
+    }
+    .modal_text{
+        font-size: 0.8rem;
+    }
+    .modal__content.lager{
+        height: 500px;
+    }
 }
 
 /* 481px — 768px */
@@ -1505,7 +1553,7 @@ footer {
     }
         
     .select-menu .options{ 
-        width: 240px;
+        width: 230px;
     }
     .select-menu .select-btn{
         font-size: 0.8rem;
@@ -1693,6 +1741,15 @@ footer {
     .bx-x{
         font-size: 1.4rem;
     }
+    .modal-text-main{
+        font-size: 1.2rem;
+    }
+    .modal_text{
+        font-size: 0.8rem;
+    }
+    .modal__content.lager{
+        height: 480px;
+    }
 }
 
 /* 320px — 480px */
@@ -1717,7 +1774,6 @@ footer {
         width: 100%;
         justify-content: space-between;
     }
-
     .initial-part__upper-buttons button{
         margin-top: 2%;
     }
@@ -1737,7 +1793,8 @@ footer {
         font-size: 0.8rem;
     }
     .initial-part__upper{
-        height: 220px;
+        height: 200px;
+        margin: 20% 0;
     }
     .btn{
         padding: 0.6rem 1rem;
@@ -1747,6 +1804,7 @@ footer {
         padding: 0.2rem 0.8rem;
     }
     .initial-part__lower-title{
+        text-align: center;
         font-size: 1rem;
     }   
     .checker__card-text{
@@ -1771,13 +1829,16 @@ footer {
         max-width: 30%;
     }
     .select-menu .options{ 
-        width: 250px;
+        width: 237px;
     }
     .select-menu .select-btn{
         font-size: 0.8rem;
     }
     .options .option{
         font-size: 0.8rem;
+    }
+    .checker__body{
+        margin: 20% 10% ;
     }
     .checker__cards{
         display: block;
@@ -1798,6 +1859,7 @@ footer {
         display: none;
     }
     .registration__body{
+        margin: 20% 10%;
         display: block;
     }
     .panel{
@@ -1826,7 +1888,7 @@ footer {
         font-size: 0.6rem;
     }
 
-    
+
     .analysis__title,.registration__info-title{
         font-size: 0.9rem;
         line-height: 0.9rem;
@@ -1842,12 +1904,17 @@ footer {
         margin-bottom: 3%;
     }
     .analysis__btn{
-        margin-top: 3%;
+        margin-top: 8%;
         margin-bottom: 3%;
+    }
+    .analysis__quota{
+        margin-top: 15%;
+        margin-bottom: 5%;
     }
     .reregistration__list-item,.footer__column-title{
         font-size: 0.8rem;
     }
+
     .header__nav-link{
         font-size: 0.4em;
         line-height: 30px;
@@ -1861,6 +1928,9 @@ footer {
     .analysis__checkbox{
         width: 15px;
         height: 15px;
+    }
+    .infoblock__body{
+        margin: 20% 10%;
     }
 
     .infoblock__shape{
@@ -1889,6 +1959,8 @@ footer {
     .infoblock__label{
         font-size: 1rem;
         line-height: 1rem;
+        text-align: center;
+        font-weight: normal;
     }
 
     .infoblock__text{
@@ -1897,6 +1969,9 @@ footer {
     }
     .analysis__image {
         display: none;
+    }
+    .reregistration__info{
+        margin: 10%;
     }
     .accordion__title,.reregistration__info-header{
         font-size: 1.1rem;
@@ -1911,7 +1986,7 @@ footer {
         margin: 5% auto;
     }
     .registration__info{
-        margin-top: 30%;
+        margin-top: 23%;
         margin-left: 0;
         width: 100%;
     }
@@ -1921,20 +1996,27 @@ footer {
     .reregistration__list-item::marker{
         font-size: 1.4rem;
     }
+    .dotes {
+        height: 0.6rem;
+        min-width: 0.6rem; 
+    }
 
     footer {
         padding: 3% 0;
     }
     .footer__body{
-        margin: 0 3%;
+        margin: 0 10%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-      
     }  
     .modal__content {
-        width: 300px;
-        height: 260px;
+        width: 320px;
+        height: 360px;
+    }
+    .other{
+        height: 400px;
+        padding: 20px;
     }
     .modal__cup{
         display: none;
@@ -1949,8 +2031,11 @@ footer {
         font-size: 1.3rem;
     }
     .bigresult{
-        width: 250px;
+        width: 340px;
         height: 400px;
+    }
+    .modal__result-info{
+        padding: 0 2%;
     }
     .modal__result-info span:first-child{
         font-size: 1.2rem;
@@ -1959,6 +2044,14 @@ footer {
     
     .modal__result-info span:last-child{
         font-size: 0.9rem;
+    }
+
+    .modal__container{
+        height: 70%;
+    }
+    
+    .modal__result-item{
+        height: calc(90%/4);
     }
     
     .modal__result-persent h2{
@@ -1979,11 +2072,12 @@ footer {
     }
     .modal__result-info p:last-child{
         margin-left: 4%;
-        font-size: 0.6rem;
+        font-size: 1rem;
         margin-top: 2%;
     }
     .profession{
-        font-size: 1rem;
+        margin: 6% 0;
+        font-size: 1.2rem;
     }
 
     .modal__info2-title{
@@ -1997,13 +2091,15 @@ footer {
         font-size: 1rem;
     }
     .modal__close-btn{
-        width: 1rem;
-        height: 1rem; 
+        width: 25px;
+        height: 25px; 
     }
     .close {
         font-size: 1rem;
     }
-
+    .modal__accordion-item {
+        height: 60px;
+    }
     .notification_box{
         width: 250px;
         height: 60px;
@@ -2019,6 +2115,16 @@ footer {
     .bx-check,
     .bx-x{
         font-size: 1.2rem;
+    }
+    .modal-text-main{
+        
+        font-size: 1.2rem;
+    }
+    .modal_text{
+        font-size: 0.8rem;
+    }
+    .modal__content.lager{
+        height: 490px;
     }
 
 }
