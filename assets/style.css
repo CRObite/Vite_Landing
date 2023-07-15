@@ -38,6 +38,7 @@ body{
     height: auto;
 }
 
+
 .header__nav-list{
     list-style: none;
 }
@@ -475,7 +476,7 @@ body{
 }
 
 .analysis__body{
-    margin: 10%;
+    margin: 5% 10% ;
     display: flex;
     align-items: center;
     justify-content: center;
