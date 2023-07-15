@@ -796,7 +796,7 @@ submitLession.onclick = function() {
     typeOfRequest: "LESSON"
   };
 
-  axios.post('http://192.168.1.232:8080/request/create', data)
+  axios.post('https://api.bilim-lab.kz/request/create', data)
   .then(response => {
     // Обработка успешного ответа
     if(response.status == 200){
@@ -840,7 +840,7 @@ submitQuestion.onclick = function() {
     typeOfRequest: "ANSWER"
   };
 
-  axios.post('http://192.168.1.232:8080/request/create', data)
+  axios.post('https://api.bilim-lab.kz/request/create', data)
   .then(response => {
     // Обработка успешного ответа
     if(response.status == 200){
