@@ -19,7 +19,13 @@ const resultItems = document.querySelectorAll(".poster2");
 const arrowItems = document.querySelectorAll(".arrow2");
 var ind;
 
+// import firstIconUrl from 'img/icon1.svg'
+// import secondIconUrl from 'img/icon2.svg'
+// import thirdIconUrl from 'img/icon3.svg'
 
+const icon1 = new URL('img/icon1.svg', import.meta.url).href
+const icon2 = new URL('img/icon2.svg', import.meta.url).href
+const icon3 = new URL('img/icon3.svg', import.meta.url).href
 
 // accordion
 
@@ -685,11 +691,36 @@ const title = document.querySelector(".modal-text-main");
 const text = document.querySelector(".modal_text");
 const inner = document.getElementById("inner_img");
 
+const svg1 = `
+<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.5 22C15.7091 22 17.5 20.2091 17.5 18C17.5 15.7909 15.7091 14 13.5 14C11.2909 14 9.5 15.7909 9.5 18C9.5 20.2091 11.2909 22 13.5 22Z" stroke="#7F56D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.175 26C7.74261 24.8029 8.63827 23.7915 9.7579 23.0833C10.8775 22.375 12.1752 21.9991 13.5 21.9991C14.8248 21.9991 16.1225 22.375 17.2421 23.0833C18.3617 23.7915 19.2574 24.8029 19.825 26H27.5C27.7652 26 28.0196 25.8946 28.2071 25.7071C28.3946 25.5196 28.5 25.2652 28.5 25V7C28.5 6.73478 28.3946 6.48043 28.2071 6.29289C28.0196 6.10536 27.7652 6 27.5 6H5.5C5.23478 6 4.98043 6.10536 4.79289 6.29289C4.60536 6.48043 4.5 6.73478 4.5 7V25C4.5 25.2652 4.60536 25.5196 4.79289 25.7071C4.98043 25.8946 5.23478 26 5.5 26H7.175Z" stroke="#7F56D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.5 22H24.5V10H8.5V12" stroke="#7F56D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+
+const svg2 = `
+<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.5 27V7C4.5 6.73478 4.60536 6.48043 4.79289 6.29289C4.98043 6.10536 5.23478 6 5.5 6H27.5C27.7652 6 28.0196 6.10536 28.2071 6.29289C28.3946 6.48043 28.5 6.73478 28.5 7V27L24.5 25L20.5 27L16.5 25L12.5 27L8.5 25L4.5 27Z" stroke="#4883FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.5 20L13.5 12L17.5 20" stroke="#4883FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.5 18H16.5" stroke="#4883FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.5 16H24.5" stroke="#4883FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 13.5V18.5" stroke="#4883FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+
+const svg3 = `
+<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.5 28L16.5 23L8.5 28V6C8.5 5.73478 8.60536 5.48043 8.79289 5.29289C8.98043 5.10536 9.23478 5 9.5 5H23.5C23.7652 5 24.0196 5.10536 24.2071 5.29289C24.3946 5.48043 24.5 5.73478 24.5 6V28Z" stroke="#C11574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.5 22L16.5 17L8.5 22" stroke="#C11574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`
+
 openModalBtn3.addEventListener("click", () => {
 
   title.innerHTML = "Білікті мұғалімдер";
   text.innerHTML = "<p>Біздің оқытушылар өз пәнін өте жақсы меңгерген, ұстаздық тәжірибесі мол жоғары білікті және тәжірибелі мамандар. Біз студенттерге жоғары сапалы білім беру үшін мұғалімдерді мұқият таңдаймыз.Біздің оқытушылар өз саласының мамандары ғана емес, сонымен қатар қарым-қатынасқа ашық және студенттерге кез келген уақытта көмектесуге дайын. Олар материалды барынша тиімді қабылдауды қамтамасыз ету үшін әртүрлі әдістерді қолдана отырып, оқытудың интерактивті тәсілін қолдайды.Сонымен қатар, біздің оқытушылар әр студентке жеке қолдау мен қажетті көмекті алуын үнемі қадағалап отырады. Олар оқу үшін қолайлы жағдай жасауға тырысады және студенттерге өз біліміне сенімдірек сезінуге көмектеседі.Біздің оқытушылар ұжымы таңдаған салаңыз бойынша біліміңізді жетілдіруге көмектесіп қана қоймай, табысқа жету жолында сізге тәлімгер және тәлімгер болады. Мұғалімдеріміздің тәжірибесі мен білімінің арқасында сіз біздің онлайн мектебімізден барынша пайда алып, өз мақсаттарыңызға жете аласыз.</p>";
-  inner.src = "img/icon1.svg";
+  inner.innerHTML = svg1;
   modal4.style.display = 'block';
 
 });
@@ -698,7 +729,7 @@ openModalBtn4.addEventListener("click", () => {
   
   title.innerHTML = "Толық дайындық";
   text.innerHTML = "<p>Біз емтиханға толық, барлық пән бойынша дайындықты ұсынамыз.Сонымен қатар емтиханға дайындық материалдарын, соның ішінде тестілерді, тәжірибелік тапсырмаларды және оқушыларға білімдерін тексеруге және емтиханға дайындалуға көмектесетін басқа материалдарды ұсынамызСонымен қатар, ұстаздарымыз оқушылардың алған білімдерін есте сақтауға және өмірде қолдануға көмектесетін оқытудың түрлі әдістерін пайдаланады. Олар студенттерге теорияны білуге ​​ғана емес, алған білімдерін іс жүзінде қалай қолдану керектігін түсінуге көмектеседі.Сондай-ақ біз студенттерге қосымша көмек пен сұрақтарына жауап алу үшін емтиханға дайындық мәселелері бойынша жеке қолдау мен кеңес береміз. Біз студенттеріміздің емтиханға толық дайындалып, толық дайындығымыздың арқасында жоғары нәтижелерге қол жеткізе алатынына кепілдік береміз.</p>";
-  inner.src = "img/icon2.svg";
+  inner.innerHTML = svg2;
   modal4.style.display = 'block';
 });
 
@@ -706,17 +737,14 @@ openModalBtn5.addEventListener("click", () => {
   title.innerHTML = "Арнайы платформа";
   text.innerHTML = "<p>Біздің онлайн мектебімізде біз оқушылар мен мұғалімдердің қажеттіліктерін ескере отырып жасалған арнайы платформаны қолданамыз. Бұл платформа біздің курстарға, материалдар мен тапсырмаларға ыңғайлы және оңай қол жеткізуді қамтамасыз етеді. Оның көмегімен студенттер оқу материалдарын жылдам және ыңғайлы қарап, мұғалімдермен байланысып, кері байланыс ала алады. Сондай-ақ платформада оқытуды жақсарту үшін бейне оқулықтар, интерактивті тапсырмалар, басқа студенттермен байланысуға арналған форумдар және т.б. сияқты әртүрлі мүмкіндіктер бар. Бұл мүмкіндіктер студенттерге уақытын тиімді пайдалануға және білімдерін жетілдіруге көмектеседі. Платформа сонымен қатар біздің студенттер үшін қауіпсіздік пен құпиялылықтың жоғары деңгейін қамтамасыз етеді. Барлық деректер қауіпсіз серверлерде сақталады және тек авторизацияланған пайдаланушылар студенттер мен олардың үлгерімі туралы ақпаратқа қол жеткізе алады. Біздің арнайы платформа онлайн мектебімізде оқуды барынша ыңғайлы, тиімді және қауіпсіз ететініне сенімдіміз.</p>";
   
-  inner.src = "img/icon3.svg";
+  inner.innerHTML = svg3;
   modal4.style.display = 'block';
 });
 
 
 closeBtn.onclick = function() {
   modal.style.display = 'none';
-
-
 }
-
 
 closeBtn1.onclick = function() {
     modal2.style.display = 'none';
@@ -728,7 +756,6 @@ closeBtn2.onclick = function() {
 closeBtn3.onclick = function() {
   modal4.style.display = 'none';
 } 
-
 
 window.onclick = function(event) {
   if (event.target == modal) {
