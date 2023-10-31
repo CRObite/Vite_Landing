@@ -4,9 +4,6 @@ var modal3 = document.getElementById('modal3');
 var modal4 = document.getElementById('modal4');
 var openModalBtn = document.getElementById('openModalBtn');
 var openModalBtn2 = document.getElementById('openModalBtn2');
-var openModalBtn3 = document.querySelectorAll('.checker__card-more')[0];
-var openModalBtn4 = document.querySelectorAll('.checker__card-more')[1];
-var openModalBtn5 = document.querySelectorAll('.checker__card-more')[2];
 var againBtn = document.getElementById('again');
 var closeBtn = document.getElementsByClassName('close')[0];
 var closeBtn1 = document.getElementsByClassName('close')[1];
@@ -18,6 +15,12 @@ const posterItems = document.querySelectorAll(".poster");
 const resultItems = document.querySelectorAll(".poster2");
 const arrowItems = document.querySelectorAll(".arrow2");
 var ind;
+
+
+
+
+const title = document.querySelector(".modal-text-main");
+const text = document.querySelector(".modal_text");
 
 // import firstIconUrl from 'img/icon1.svg'
 // import secondIconUrl from 'img/icon2.svg'
@@ -54,39 +57,30 @@ const slider = document.getElementById("myRange");
 
 
 const checkerItems = document.querySelectorAll(".checker__card");
-const dotsItems = document.querySelectorAll(".checker_dot");
+
 
 checkerItems.forEach((checker , index) => {
     checker.addEventListener("click", () => {
-      const isActive = checker.classList.contains("active");
-  
-      checkerItems.forEach((item, index2) => {
-        item.classList.remove("active");
-        dotsItems[index2].classList.remove("active");
-      });
-  
-      if (!isActive) {
-        checker.classList.add("active");
-        dotsItems[index].classList.add("active");
-      }
+      if(index == 0){
+        title.innerHTML = "Білікті мұғалімдер";
+        text.innerHTML = "<p>Біздің оқытушылар өз пәнін өте жақсы меңгерген, ұстаздық тәжірибесі мол жоғары білікті және тәжірибелі мамандар. Біз студенттерге жоғары сапалы білім беру үшін мұғалімдерді мұқият таңдаймыз.Біздің оқытушылар өз саласының мамандары ғана емес, сонымен қатар қарым-қатынасқа ашық және студенттерге кез келген уақытта көмектесуге дайын. Олар материалды барынша тиімді қабылдауды қамтамасыз ету үшін әртүрлі әдістерді қолдана отырып, оқытудың интерактивті тәсілін қолдайды.Сонымен қатар, біздің оқытушылар әр студентке жеке қолдау мен қажетті көмекті алуын үнемі қадағалап отырады. Олар оқу үшін қолайлы жағдай жасауға тырысады және студенттерге өз біліміне сенімдірек сезінуге көмектеседі.Біздің оқытушылар ұжымы таңдаған салаңыз бойынша біліміңізді жетілдіруге көмектесіп қана қоймай, табысқа жету жолында сізге тәлімгер және тәлімгер болады. Мұғалімдеріміздің тәжірибесі мен білімінің арқасында сіз біздің онлайн мектебімізден барынша пайда алып, өз мақсаттарыңызға жете аласыз.</p>";
+      
+        modal4.style.display = 'block';
+      }else if(index == 1){
+        title.innerHTML = "Толық дайындық";
+        text.innerHTML = "<p>Біз емтиханға толық, барлық пән бойынша дайындықты ұсынамыз.Сонымен қатар емтиханға дайындық материалдарын, соның ішінде тестілерді, тәжірибелік тапсырмаларды және оқушыларға білімдерін тексеруге және емтиханға дайындалуға көмектесетін басқа материалдарды ұсынамызСонымен қатар, ұстаздарымыз оқушылардың алған білімдерін есте сақтауға және өмірде қолдануға көмектесетін оқытудың түрлі әдістерін пайдаланады. Олар студенттерге теорияны білуге ​​ғана емес, алған білімдерін іс жүзінде қалай қолдану керектігін түсінуге көмектеседі.Сондай-ақ біз студенттерге қосымша көмек пен сұрақтарына жауап алу үшін емтиханға дайындық мәселелері бойынша жеке қолдау мен кеңес береміз. Біз студенттеріміздің емтиханға толық дайындалып, толық дайындығымыздың арқасында жоғары нәтижелерге қол жеткізе алатынына кепілдік береміз.</p>";
+      
+        modal4.style.display = 'block';
+      }else{
+        title.innerHTML = "Арнайы платформа";
+        text.innerHTML = "<p>Біздің онлайн мектебімізде біз оқушылар мен мұғалімдердің қажеттіліктерін ескере отырып жасалған арнайы платформаны қолданамыз. Бұл платформа біздің курстарға, материалдар мен тапсырмаларға ыңғайлы және оңай қол жеткізуді қамтамасыз етеді. Оның көмегімен студенттер оқу материалдарын жылдам және ыңғайлы қарап, мұғалімдермен байланысып, кері байланыс ала алады. Сондай-ақ платформада оқытуды жақсарту үшін бейне оқулықтар, интерактивті тапсырмалар, басқа студенттермен байланысуға арналған форумдар және т.б. сияқты әртүрлі мүмкіндіктер бар. Бұл мүмкіндіктер студенттерге уақытын тиімді пайдалануға және білімдерін жетілдіруге көмектеседі. Платформа сонымен қатар біздің студенттер үшін қауіпсіздік пен құпиялылықтың жоғары деңгейін қамтамасыз етеді. Барлық деректер қауіпсіз серверлерде сақталады және тек авторизацияланған пайдаланушылар студенттер мен олардың үлгерімі туралы ақпаратқа қол жеткізе алады. Біздің арнайы платформа онлайн мектебімізде оқуды барынша ыңғайлы, тиімді және қауіпсіз ететініне сенімдіміз.</p>";
+        
+        modal4.style.display = 'block';
+      }     
     });
 });
 
-dotsItems.forEach((dot , index) => {
-  dot.addEventListener("click", () => {
-    const isActive = dot.classList.contains("active");
 
-    dotsItems.forEach((item, index2) => {
-      item.classList.remove("active");
-      checkerItems[index2].classList.remove("active");
-    });
-
-    if (!isActive) {
-      dot.classList.add("active");
-      checkerItems[index].classList.add("active");
-    }
-  });
-});
 
 
 const optionMenu = document.querySelector(".select-menu"),
@@ -101,8 +95,14 @@ const optionMenu2 = document.querySelectorAll(".select-menu")[1],
   options2 = optionMenu2.querySelectorAll(".option"),
   sBtn_text2 = optionMenu2.querySelector(".sBtn-text");
 
-SelectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
-SelectBtn2.addEventListener("click", () => optionMenu2.classList.toggle("active"));
+SelectBtn.addEventListener("click", () => {
+  optionMenu.classList.toggle("active");
+  optionMenu2.classList.remove("active");
+});
+SelectBtn2.addEventListener("click", () => {
+  optionMenu2.classList.toggle("active");
+  optionMenu.classList.remove("active");
+});
 
 var sub1;
 var sub2;
@@ -110,9 +110,10 @@ var sub2;
 options.forEach(option => {
   option.addEventListener("click", () => {
     let selectedOption = option.querySelector(".option-text").innerHTML;
+    optionMenu.classList.remove("active");
     sBtn_text.innerHTML = selectedOption;
     sBtn_text2.innerHTML = "Екінші бейіндік пән";
-    optionMenu.classList.remove("active");
+    
     sub1 = option.querySelector(".option-text").getAttribute("data");
     makeAllClear(option.querySelector(".option-text").getAttribute("data"));
   })
@@ -248,8 +249,8 @@ function makeAllClear(value){
 // const subject1Select = document.getElementById('subject1');
 // const subject2Select = document.getElementById('subject2');
 const mapOfProfession = new Map([
-  ['math-physics',['B009','B010','B054','B055','B056','B059','B061','B062','B063','B064','B065','B066','B067','B069','B070','B071','B074','B076','B082','B094','B162','B166','B167','B171','B183','B271']],
-  ['math-geog',['B038','B044','B045','B046','B047','B048','B052','B075','B095','B145']],
+  ['math-physics',['B009','B010','B054','B055','B056','B059','B061','B062','B063','B064','B065','B066','B067','B069','B070','B071','B074','B076','B082','B094','B097','B162','B166','B167','B171','B183','B271']],
+  ['math-geog',['B038','B044','B045','B046','B047','B048','B052','B075','B081','B095','B145']],
   ['math-cs',['B011','B057','B058']],
   ['biology-geog',['B001','B002','B003','B019','B020','B041','B051','B079','B090']],
   ['geog-english',['B091','B093']],
@@ -258,7 +259,7 @@ const mapOfProfession = new Map([
   ['chemistry-biology',['B012','B013','B050','B053','B068','B072','B077','B078','B080','B083','B084','B085','B086','B087','B088','B089']],
   ['chemistry-physics',['B060']],
   ['english-history',['B018','B035','B036','B039','B040','B135','B140']],
-  ['art-art',['B004','B005','B006','B007','B021','B027','B028','B029','B030','B031','B033','B042','B073','B092']],
+  ['art-art',['B004','B005','B006','B007','B021','B022','B023','B024','B025','B026','B027','B028','B029','B030','B031','B033','B042','B073','B092']],
   ['kazakh-kazakhlit',['B016','B017','B037','B043']],
   ['kr-krlit',['B016','B017','B037','B043']]
   ]);
@@ -363,6 +364,13 @@ const mapOfProfessionName = new Map([
   ['B017','Орыс тілі мен әдебиеті мұғалімдерін даярлау'],  
   ['B037','Филология'],
   ['B043','Қазақ тілі мен әдебиеті мұғалімдерін даярлау'],
+  ['B022','Музыкатану'],
+  ['B023','Режиссура, арт-менеджмент'],
+  ['B024','Өнертану'],
+  ['B025','Дирижирование'],
+  ['B026','Композиция'], 
+  ['B081','Жер ресурстарын басқару'],
+  ['B097','Өрт қауіпсіздігі'],
 ]);
 const mapOfProfessionPoint = new Map([
   ['B009',126],
@@ -464,7 +472,14 @@ const mapOfProfessionPoint = new Map([
   ['B016',115],
   ['B017',95],  
   ['B037',118],
-  ['B043',109]
+  ['B043',109],
+  ['B022',69],
+  ['B023',69],
+  ['B024',69],
+  ['B025',69],
+  ['B026',69],
+  ['B081',91],
+  ['B097',59],
 ]);
 
 // subject2Select.addEventListener('change', function(){
@@ -687,60 +702,6 @@ openModalBtn2.addEventListener("click", () => {
   
 });
 
-const title = document.querySelector(".modal-text-main");
-const text = document.querySelector(".modal_text");
-const inner = document.getElementById("inner_img");
-
-const svg1 = `
-<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.5 22C15.7091 22 17.5 20.2091 17.5 18C17.5 15.7909 15.7091 14 13.5 14C11.2909 14 9.5 15.7909 9.5 18C9.5 20.2091 11.2909 22 13.5 22Z" stroke="#7F56D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M7.175 26C7.74261 24.8029 8.63827 23.7915 9.7579 23.0833C10.8775 22.375 12.1752 21.9991 13.5 21.9991C14.8248 21.9991 16.1225 22.375 17.2421 23.0833C18.3617 23.7915 19.2574 24.8029 19.825 26H27.5C27.7652 26 28.0196 25.8946 28.2071 25.7071C28.3946 25.5196 28.5 25.2652 28.5 25V7C28.5 6.73478 28.3946 6.48043 28.2071 6.29289C28.0196 6.10536 27.7652 6 27.5 6H5.5C5.23478 6 4.98043 6.10536 4.79289 6.29289C4.60536 6.48043 4.5 6.73478 4.5 7V25C4.5 25.2652 4.60536 25.5196 4.79289 25.7071C4.98043 25.8946 5.23478 26 5.5 26H7.175Z" stroke="#7F56D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.5 22H24.5V10H8.5V12" stroke="#7F56D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`
-
-const svg2 = `
-<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.5 27V7C4.5 6.73478 4.60536 6.48043 4.79289 6.29289C4.98043 6.10536 5.23478 6 5.5 6H27.5C27.7652 6 28.0196 6.10536 28.2071 6.29289C28.3946 6.48043 28.5 6.73478 28.5 7V27L24.5 25L20.5 27L16.5 25L12.5 27L8.5 25L4.5 27Z" stroke="#4883FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.5 20L13.5 12L17.5 20" stroke="#4883FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.5 18H16.5" stroke="#4883FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M19.5 16H24.5" stroke="#4883FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22 13.5V18.5" stroke="#4883FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`
-
-const svg3 = `
-<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24.5 28L16.5 23L8.5 28V6C8.5 5.73478 8.60536 5.48043 8.79289 5.29289C8.98043 5.10536 9.23478 5 9.5 5H23.5C23.7652 5 24.0196 5.10536 24.2071 5.29289C24.3946 5.48043 24.5 5.73478 24.5 6V28Z" stroke="#C11574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M24.5 22L16.5 17L8.5 22" stroke="#C11574" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`
-
-openModalBtn3.addEventListener("click", () => {
-
-  title.innerHTML = "Білікті мұғалімдер";
-  text.innerHTML = "<p>Біздің оқытушылар өз пәнін өте жақсы меңгерген, ұстаздық тәжірибесі мол жоғары білікті және тәжірибелі мамандар. Біз студенттерге жоғары сапалы білім беру үшін мұғалімдерді мұқият таңдаймыз.Біздің оқытушылар өз саласының мамандары ғана емес, сонымен қатар қарым-қатынасқа ашық және студенттерге кез келген уақытта көмектесуге дайын. Олар материалды барынша тиімді қабылдауды қамтамасыз ету үшін әртүрлі әдістерді қолдана отырып, оқытудың интерактивті тәсілін қолдайды.Сонымен қатар, біздің оқытушылар әр студентке жеке қолдау мен қажетті көмекті алуын үнемі қадағалап отырады. Олар оқу үшін қолайлы жағдай жасауға тырысады және студенттерге өз біліміне сенімдірек сезінуге көмектеседі.Біздің оқытушылар ұжымы таңдаған салаңыз бойынша біліміңізді жетілдіруге көмектесіп қана қоймай, табысқа жету жолында сізге тәлімгер және тәлімгер болады. Мұғалімдеріміздің тәжірибесі мен білімінің арқасында сіз біздің онлайн мектебімізден барынша пайда алып, өз мақсаттарыңызға жете аласыз.</p>";
-  inner.innerHTML = svg1;
-  modal4.style.display = 'block';
-
-});
-
-openModalBtn4.addEventListener("click", () => {
-  
-  title.innerHTML = "Толық дайындық";
-  text.innerHTML = "<p>Біз емтиханға толық, барлық пән бойынша дайындықты ұсынамыз.Сонымен қатар емтиханға дайындық материалдарын, соның ішінде тестілерді, тәжірибелік тапсырмаларды және оқушыларға білімдерін тексеруге және емтиханға дайындалуға көмектесетін басқа материалдарды ұсынамызСонымен қатар, ұстаздарымыз оқушылардың алған білімдерін есте сақтауға және өмірде қолдануға көмектесетін оқытудың түрлі әдістерін пайдаланады. Олар студенттерге теорияны білуге ​​ғана емес, алған білімдерін іс жүзінде қалай қолдану керектігін түсінуге көмектеседі.Сондай-ақ біз студенттерге қосымша көмек пен сұрақтарына жауап алу үшін емтиханға дайындық мәселелері бойынша жеке қолдау мен кеңес береміз. Біз студенттеріміздің емтиханға толық дайындалып, толық дайындығымыздың арқасында жоғары нәтижелерге қол жеткізе алатынына кепілдік береміз.</p>";
-  inner.innerHTML = svg2;
-  modal4.style.display = 'block';
-});
-
-openModalBtn5.addEventListener("click", () => {
-  title.innerHTML = "Арнайы платформа";
-  text.innerHTML = "<p>Біздің онлайн мектебімізде біз оқушылар мен мұғалімдердің қажеттіліктерін ескере отырып жасалған арнайы платформаны қолданамыз. Бұл платформа біздің курстарға, материалдар мен тапсырмаларға ыңғайлы және оңай қол жеткізуді қамтамасыз етеді. Оның көмегімен студенттер оқу материалдарын жылдам және ыңғайлы қарап, мұғалімдермен байланысып, кері байланыс ала алады. Сондай-ақ платформада оқытуды жақсарту үшін бейне оқулықтар, интерактивті тапсырмалар, басқа студенттермен байланысуға арналған форумдар және т.б. сияқты әртүрлі мүмкіндіктер бар. Бұл мүмкіндіктер студенттерге уақытын тиімді пайдалануға және білімдерін жетілдіруге көмектеседі. Платформа сонымен қатар біздің студенттер үшін қауіпсіздік пен құпиялылықтың жоғары деңгейін қамтамасыз етеді. Барлық деректер қауіпсіз серверлерде сақталады және тек авторизацияланған пайдаланушылар студенттер мен олардың үлгерімі туралы ақпаратқа қол жеткізе алады. Біздің арнайы платформа онлайн мектебімізде оқуды барынша ыңғайлы, тиімді және қауіпсіз ететініне сенімдіміз.</p>";
-  
-  inner.innerHTML = svg3;
-  modal4.style.display = 'block';
-});
-
 
 closeBtn.onclick = function() {
   modal.style.display = 'none';
@@ -818,30 +779,37 @@ function fillModalInfo(){
   });
 }
 
-
-
-
-
 const carousel = document.querySelector(".slider__carousel");
+const scrollbarThumb = document.querySelector(".scrollbar-thumb");
+const scrollbarTrack = document.querySelector(".scrollbar-track");
 
-let isDragStart = false, prevPageX, prevScrollLeft;
+
+let isDragStart = false;
+let prevPageX, prevScrollLeft;
+
+const updateScrollbarThumb = () => {
+  const scrollPercentage = (carousel.scrollLeft / (carousel.scrollWidth - carousel.clientWidth)) * 100;
+  const thumbPosition = (scrollPercentage * (scrollbarTrack.clientWidth - scrollbarThumb.clientWidth)) / 100;
+  scrollbarThumb.style.left = `${thumbPosition}px`;
+};
 
 const dragStart = (e) => {
   isDragStart = true;
   prevPageX = e.type === "touchstart" ? e.touches[0].pageX : e.pageX;
   prevScrollLeft = carousel.scrollLeft;
-}
+};
 
 const dragging = (e) => {
   if (!isDragStart) return;
   e.preventDefault();
-  let positionDiff = (e.type === "touchmove" ? e.touches[0].pageX : e.pageX) - prevPageX;
+  const positionDiff = (e.type === "touchmove" ? e.touches[0].pageX : e.pageX) - prevPageX;
   carousel.scrollLeft = prevScrollLeft - positionDiff;
-}
+  updateScrollbarThumb();
+};
 
 const dragStop = () => {
   isDragStart = false;
-}
+};
 
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("touchstart", dragStart);
@@ -851,6 +819,91 @@ carousel.addEventListener("touchmove", dragging);
 
 carousel.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
+
+
+carousel.addEventListener("scroll", updateScrollbarThumb);
+
+
+updateScrollbarThumb();
+window.addEventListener("resize", updateScrollbarThumb);
+
+
+
+function handleIntersection(entries, observer) {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+          // Unobserve after animating once
+          observer.unobserve(entry.target);
+      }
+  });
+}
+
+
+const opt = {
+  threshold: 0.5, 
+};
+
+const observer = new IntersectionObserver(handleIntersection, opt);
+
+const checkerAnimation = document.getElementById('checker-animation');
+observer.observe(checkerAnimation);
+
+const infoblockAnimation = document.getElementById('infoblock-animation');
+observer.observe(infoblockAnimation);
+
+const infoblockAnimation2 = document.getElementById('infoblock-animation2');
+observer.observe(infoblockAnimation2);
+const infoblockAnimation3 = document.getElementById('infoblock-animation3');
+observer.observe(infoblockAnimation3);
+
+
+
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+
+function handleScroll() {
+  const element = document.querySelector('.animate-left');
+  if (isElementInViewport(element)) {
+      element.classList.add('animated');
+      window.removeEventListener('scroll', handleScroll);
+  }
+}
+
+
+window.addEventListener('scroll', handleScroll);
+
+
+handleScroll();
+
+
+
+
+
+
+const imageSources = ['img/study_image1.jpg', 'img/study_image2.jpg', 'img/study_image3.jpg', 'img/study_image4.jpg'];
+    let currentIndex = 0;
+
+    function changeImage() {
+      const image = document.getElementById("study_images");
+      image.style.opacity = 0; 
+      setTimeout(() => {
+          image.src = imageSources[currentIndex];
+          image.style.opacity = 1; 
+          currentIndex = (currentIndex + 1) % imageSources.length;
+      }, 1000);
+  }
+
+  setInterval(changeImage, 3000);
 
 var phoneInputs = document.getElementsByClassName('telephone');
 

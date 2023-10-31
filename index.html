@@ -18,6 +18,8 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <title>BilimLab</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" type="image/x-icon" href="/img/Group-33701.ico">
@@ -47,25 +49,36 @@
         </div>
     </header>
 
+
     <!-- initial-part -->
+    
     <div class="initial-part">
         <div class="initial-part__body">
             <div class="initial-part__upper">
-                <p class="initial-part__text blue">Онлайн мектеп</p>
+                <div class="initial-part__upper-first">
+                    <p class="initial-part__text blue">Онлайн мектеп</p>
 
-                <div>
-                    <h1 class="initial-part__title"><span>Bilim</span><span class="initial-part__title-text blue">Lab </span><span></span>онлайн мектебі</span></h1>
-
-                    <p class="initial-part__subtitle green">Сізге ыңғайлы форматта дайындалуға және сынақтардан сәтті өтуге көмектесеміз</p>
+                    <div>
+                        <h1 class="initial-part__title"><span>Bilim</span><span class="initial-part__title-text blue">Lab </span><span></span>онлайн мектебі</span></h1>
+    
+                        <p class="initial-part__subtitle green">Сізге ыңғайлы форматта дайындалуға және тесттен сәтті өтуге көмектесеміз</p>
+                    </div>
+                    
+    
+                    <div class="initial-part__upper-buttons">
+                        <a href="#section4"><button class="btn">Тегін тіркелу</button></a>
+                        <a href="#section5"><button class="btn white">Толығырақ білу</button></a>
+                    </div>
                 </div>
-                
 
-                <div class="initial-part__upper-buttons">
-                    <a href="#section4"><button class="btn">Тегін тіркелу</button></a>
-                    <a href="#section5"><button class="btn white">Толығырақ білу</button></a>
+
+                <div class="initial-part__upper-second">
+                    <img id="study_images" src="img/study_image4.jpg" alt="Image 1" height="300" >
                 </div>
             </div>
             <div class="initial-part__lower">
+
+                
                 <h2 class="initial-part__lower-title">Мақсатыңызға байланысты сабақтарды таңдаңыз</h2>
 
                 <div class="initial-part__cards">
@@ -77,24 +90,27 @@
                     </div>
                     <div class="initial-part__card card">
                         <img src="img/teacher.png" alt="teacher" class="initial-part__card-image">
-                        <h3 class="initial-part__card-title">Магистратура</h3>
+                        <h3 class="initial-part__card-title">Үш этапты дайындық</h3>
                         <hr class="initial-part__card-line">
-                        <p class="initial-part__card-subtitle green">Қазақстанда магистратураға түсу үшін сынақтарға дайындық</p>
+                        <p class="initial-part__card-subtitle green">Сабақ 1,5 сағат эфир, Тапсырма/Тест , Талдау</p>
                     </div>
                     <div class="initial-part__card card">
                         <img src="img/bag.png" alt="bag" class="initial-part__card-image">
                         <h3 class="initial-part__card-title">Мұғалімдер</h3>
                         <hr class="initial-part__card-line">
-                        <p class="initial-part__card-subtitle green">Квалификацияңызды көтеріп, квал тест тапсыруға көмектесеміз</p>
+                        <p class="initial-part__card-subtitle green">Жоғары білікті және дәлелденген мұғалімдер</p>
                     </div>
                 </div>
+
+                <div id="section1"></div>
+
             </div>
         </div>
     </div>
 
     <!--checker-part -->
-    <div id="section1"></div>
-    <div class="checker">
+    
+    <div class="checker" id="checker-animation">
         
         <div class="checker__body">
             <h1 class="cheker__title"><span>Bilim</span><span class="cheker__title-text blue" >Lab</span><span> - бұл</span></h1>
@@ -110,9 +126,8 @@
                     <div class="checker__card-info">
                         <p class="checker__card-text green">Біздің мұғалімдер өз пәнін өте жақсы меңгерген, ұстаздық тәжірибесі мол, жоғары білікті және тәжірибелі мамандар</p>
                    
-                        
                     </div>
-                    <p class="checker__card-more blue">Толығырақ ></p>
+                   
                 </div>
                 <div class="checker__card card">
                     <div class="checker__card-header">
@@ -124,7 +139,7 @@
                     <div class="checker__card-info">
                         <p class="checker__card-text green">Біз емтиханға толық, барлық пән бойынша дайындықты ұсынамыз. Сонымен қатар емтиханға дайындық материалдарын</p>
                    
-                        <p class="checker__card-more blue" >Толығырақ ></p>
+                        
                     </div>
                 </div>
                 <div class="checker__card card">
@@ -136,18 +151,12 @@
                     </div>
                     <div class="checker__card-info">
                         <p class="checker__card-text green">Біз сабақтарға оқушылар мен мұғалімдердің қажеттіліктерін ескере отырып жасалған арнайы платформаны қолданамыз</p>
-                   
-                        <p class="checker__card-more blue">Толығырақ ></p>
                     </div>
                 </div>
             </div>
 
 
-            <div class="checker_dots">
-                <span class="checker_dot active"></span>
-                <span class="checker_dot"></span>
-                <span class="checker_dot"></span>
-            </div>
+            
         </div>
     </div>
 
@@ -155,16 +164,29 @@
     
     <div class="slider">
         <div class="slider__wrapper">
+
+
+            
             <div class="slider__carousel">
-                <div class="slider__carousel-item"><img src="img/image 4.png" alt="image 1"></div>
-                <div class="slider__carousel-item"><img src="img/image 5.png" alt="image 2"></div>
-                <div class="slider__carousel-item"><img src="img/image 6.png" alt="image 3"></div>
-                <div class="slider__carousel-item"><img src="img/image 25.png" alt="image 4"></div>
-                <div class="slider__carousel-item"><img src="img/image 26.png" alt="image 5"></div>
-                <div class="slider__carousel-item"><img src="img/image 27.png" alt="image 6"></div>
-                <div class="slider__carousel-item"><img src="img/image 8.png" alt="image 7"></div>
-                <div class="slider__carousel-item"><img src="img/image 9.png" alt="image 8"></div>
+
+                <div class="slider__carousel-item"><a href="https://testcenter.kz/" target="_blank"><img src="img/image 4.png" alt="image 1"></a></div>
+                <div class="slider__carousel-item"><a href="https://kbtu.edu.kz/ru/" target="_blank"><img src="img/image 5.png" alt="image 2"></a></div>
+                <div class="slider__carousel-item"><a href="https://sdu.edu.kz/language/ru/" target="_blank"><img src="img/image 6.png" alt="image 3"></a></div>
+                <div class="slider__carousel-item"><a href="https://iitu.edu.kz/ru/" target="_blank"><img src="img/image 25.png" alt="image 4"></a></div>
+                <div class="slider__carousel-item"><a href="https://univery.kz/uib.html" target="_blank"><img src="img/image 26.png" alt="image 5"></a></div>
+                <div class="slider__carousel-item"><a href="https://narxoz.edu.kz/" target="_blank"><img src="img/image 27.png" alt="image 6"></a></div>
+                <div class="slider__carousel-item"><a href="https://aues.edu.kz/ru/" target="_blank"><img src="img/image 8.png" alt="image 7"></a></div>
+                <div class="slider__carousel-item"><a href="https://www.aesa.kz/" target="_blank"><img src="img/image 9.png" alt="image 8"></a></div>
+
             </div>
+
+            
+        </div>
+
+    </div>
+    <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
         </div>
     </div>
 
@@ -173,6 +195,12 @@
     <div class="registration">
         
         <div class="registration__body">
+
+            <div class="registration__info animate-left">
+                <h3 class="registration__info-title">Тегін кәсіптік бағдар алыңыз</h3>
+                <p class="registration__text green">Тегін кәсіптік бағдар алып, болашақ мамандығыңызға жолды жоспарлаңыз</p>
+            </div>
+
             <div class="registration__main">
                 <div class="registration__overlay">
                     <img class="registration__img" src="img/bell-dynamic-color.png" alt="bell">
@@ -182,13 +210,8 @@
                     <input type="text" placeholder="Телефон" class="panel-input telephone" id="input2"/><br>
 
                     <p class="error_message"></p>
-                    <Button class="panel-btn btn yellow">Тегін дайындықты бастау</Button>
+                    <Button class="panel-btn btn yellow">Кәсіп бағдар алу</Button>
                 </div> 
-            </div>
-            
-            <div class="registration__info">
-                <h3 class="registration__info-title">Тегін түрде қатысып, шешім қабылдаңыз</h3>
-                <p class="registration__text green">Бірінші тегін сабаққа қатысып, сабақтарымыздың қалай өтетінін көріңіз</p>
             </div>
         </div>
     </div>
@@ -303,7 +326,7 @@
                 
             </div>
             <div class="analysis__image">
-              <img src="img/cup.png" alt="cup">
+              <img src="img/cup.png" alt="cup" id="animatedImage">
             </div>
             
         </div>
@@ -316,9 +339,12 @@
         <div class="infoblock__body">
             <h1 class="infoblock__title"><span>Неліктен Bilim</span><span  class="infoblock__title-text blue" >Lab</span>?</h1>
             
-            <div class="infoblock__contentfield">
-                <div class="infoblock__shapes">
-                    <div class="infoblock__shape pink"><img  class="infoblock__img" src="img/Globe.png" alt="globe"></div>
+            <div class="infoblock__contentfield" id="infoblock-animation" >
+                <div class="infoblock__shapes" >
+                    <div class="infoblock__shape pink">
+                        <img  class="infoblock__img" src="img/Globe.png" alt="globe">
+                        <img class="hidden-image" src="img/Online.png" alt="Hidden Image" >
+                    </div>
                     <div class="infoblock__shape darkerblue smoothed"></div>
                 </div>
                 <div class="infoblock__textfild">
@@ -326,24 +352,30 @@
                     <p class="infoblock__text green">Сабақтар біздің арнайы платформада тікелей эфирде өтетін болады. Онлайн сабақтар кезінде мұғалім мен оқушылар бір-бірімен тікелей сөйлесіп, материалдарды талқылап, бір-біріне сұрақтар қоя алады.Мұғалім оқушыларға материалды түсіндіру үшін тақтаны пайдаланады немесе презентациялар көрсете алады. </p>
                 </div>
             </div>
-            <div class="infoblock__contentfield">
+            <div class="infoblock__contentfield" id="infoblock-animation2">
                 <div class="infoblock__textfild reverse">
                     <h2 class="infoblock__label">Тапсырмалар мен үй жұмыстарын жеке тексереміз</h2>
                     <p class="infoblock__text  green">Тапсырмалар мен үй тапсырмасын мұғалім немесе оқу платформасы да тексере алады. Бұл әдетте тапсырма түріне байланысты.</p>
                 </div>
                 <div class="infoblock__shapes">
-                    <div class="infoblock__shape skyblue"><img  class="infoblock__img" src="img/Pie Chart.png" alt="Pie"></div>
+                    <div class="infoblock__shape skyblue">
+                        <img  class="infoblock__img" src="img/Pie Chart.png" alt="Pie">
+                        <img class="hidden-image" src="img/Homework.png" alt="Hidden Image" >
+                    </div>
                     <div class="infoblock__shape orange smoothed"></div>
                 </div>
                
             </div>
-            <div class="infoblock__contentfield">
+            <div class="infoblock__contentfield" id="infoblock-animation3">
                 <div class="infoblock__shapes">
-                    <div class="infoblock__shape grassgreen"><img  class="infoblock__img" src="img/Smartphone.png" alt="Smartphone"></div>
+                    <div class="infoblock__shape grassgreen">
+                        <img  class="infoblock__img" src="img/Smartphone.png" alt="Smartphone">
+                        <img class="hidden-image" src="img/Message.png" alt="Hidden Image" >
+                    </div>
                     <div class="infoblock__shape red smoothed"></div>
                 </div>
                 <div class="infoblock__textfild">
-                    <h2 class="infoblock__label">Куратор сізге екі сағат ішінде жауап береді</h2>
+                    <h2 class="infoblock__label">Куратор сізге әрқашан жауап беруге дайын</h2>
                     <p class="infoblock__text green">Әдетте кураторлар сізге мүмкіндігінше жылдам жауап беруге тырысады, сондықтан сіз бірнеше сағат ішінде жауап күте аласыз. Сұрауыңыз шұғыл болса, жылдамырақ жауап алу үшін техникалық қолдау қызметіне тікелей хабарласуыңызға болады.</p>
                 </div>
             </div>
@@ -465,7 +497,7 @@
             <div class="footer__column">
                 <h3 class="footer__column-title">Мекен-жайымыз</h3>
                 <ul class="footer__items">
-                    <li class="footer__item"><a href="https://goo.gl/maps/FbhGeSkeJ3RE8d8T9" target="_blank" class="footer__link">г.Алматы, Мауленова 92</a></li>
+                    <li class="footer__item"><a href="https://maps.app.goo.gl/MBFVxvBrjiMLBzmr8" target="_blank" class="footer__link">г.Алматы, пр-т. Абая 52в, БЦ "Байзак", 732 кб.</a></li>
                 </ul>
             </div>
             <div class="footer__column">
@@ -620,9 +652,6 @@
             <div class="modal__close-btn"><span class="close">&times;</span></div>
             
              <div class="checker__card-header ">
-                        <div class="checker__card-image inner" id="inner">
-                            <i id="inner_img"></i>
-                        </div>
                         <h2 class="modal-text-main"></h2>
                 </div>
             <div class="modal__text-container">
