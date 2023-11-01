@@ -890,22 +890,22 @@ handleScroll();
 
 
 
-const imageSources = ['img/study_image1.jpg', 'img/study_image2.jpg', 'img/study_image3.jpg', 'img/study_image4.jpg'];
-    let currentIndex = 0;
+// const imageSources = ['img/study_image1.jpg', 'img/study_image2.jpg', 'img/study_image3.jpg', 'img/study_image4.jpg'];
+//     let currentIndex = 0;
 
-    function changeImage() {
-      const image = document.getElementById("study_images");
-      image.style.opacity = 0; 
-      setTimeout(() => {
-          image.src = imageSources[currentIndex];
-          image.style.opacity = 1; 
-          currentIndex = (currentIndex + 1) % imageSources.length;
-      }, 1000);
-  }
+//     function changeImage() {
+//       const image = document.getElementById("study_images");
+//       image.style.opacity = 0; 
+//       setTimeout(() => {
+//           image.src = imageSources[currentIndex];
+//           image.style.opacity = 1; 
+//           currentIndex = (currentIndex + 1) % imageSources.length;
+//       }, 1000);
+//   }
 
-  setInterval(changeImage, 3000);
+//   setInterval(changeImage, 3000);
 
-var phoneInputs = document.getElementsByClassName('telephone');
+// var phoneInputs = document.getElementsByClassName('telephone');
 
 for (var i = 0; i < phoneInputs.length; i++) {
   Inputmask({
